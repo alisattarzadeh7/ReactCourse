@@ -6,16 +6,21 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "mini-css-extract-plugin": "^2.4.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
-    "web-vitals": "^2.1.0"
+    "web-vitals": "^2.1.0",
+    "yarn": "^1.22.17"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "webpack-dev-server": "webpack serve",
+    "dev": "webpack serve --mode development --content-base --open --hot",
+    "prod": "webpack --mode=production"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +39,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-react": "^7.16.5",
+    "babel-loader": "^8.2.3",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-hot-middleware": "^2.25.0"
   }
 }

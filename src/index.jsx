@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+if (module.hot && process.env.NODE_ENV !== "production") {
+    module.hot.accept();
+}
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
