@@ -1,14 +1,14 @@
 import React from 'react'
-
+import Banner from "../../components/Banner";
 
 const index = () => {
 
     return (
         <>
             <div>
-                helllo world
+                <Banner text="text from props"/>
             </div>
-            <div>this is ali</div>
+
         </>
     );
 }
